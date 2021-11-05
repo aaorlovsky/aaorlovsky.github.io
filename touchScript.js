@@ -1,9 +1,0 @@
-document.addEventListener("DOMContentLoaded", startup);
-
-function startup() {
-  var el = document.getElementById("canvas");
-  el.addEventListener("touchstart", handleStart, false);
-  el.addEventListener("touchend", handleEnd, false);
-  el.addEventListener("touchcancel", handleCancel, false);
-  el.addEventListener("touchmove", handleMove, false);
-}

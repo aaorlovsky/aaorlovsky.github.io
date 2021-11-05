@@ -1,7 +1,4 @@
 let canvas = document.getElementById("gameCanvas");
-canvas.width = window.innerWidth * 0.95;
-canvas.height = window.innerHeight / 2;
-
 let ctx = canvas.getContext("2d");
 
 let x = canvas.width / 2;
@@ -182,4 +179,11 @@ function draw() {
   y += dy;
 }
 
-interval = setInterval(draw, 10);
+let button = document.querySelector("#start");
+
+button.addEventListener("click", startButtonClick, false);
+
+function startButtonClick() {
+  alert("click");
+  interval = setInterval(draw, 10);
+}
