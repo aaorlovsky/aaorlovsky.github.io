@@ -184,5 +184,8 @@ let button = document.querySelector("#start");
 button.addEventListener("click", startButtonClick, false);
 
 function startButtonClick() {
+  canvas.width = window.innerWidth * 0.9;
+  canvas.height = window.innerHeight / 2;
+
   interval = setInterval(draw, 10);
 }

@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
+html,
+body {
+  height: 90%;
+  margin: 0;
+}
+
 p {
   text-align: center;
   font-family: "Pacifico", sans-serif;
@@ -15,4 +21,29 @@ canvas {
   margin: 0 auto;
   /* width: 640px;
   height: 640px; */
+}
+
+.footer-div {
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  text-align: center;
+  margin: 10;
+}
+
+button {
+  background: #0e4f1f;
+  color: white;
+  font: inherit;
+  border: 1.5px solid #0e4f1f;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover,
+button:active {
+  background: white;
+  color: #0e4f1f;
 }
