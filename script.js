@@ -184,6 +184,5 @@ let button = document.querySelector("#start");
 button.addEventListener("click", startButtonClick, false);
 
 function startButtonClick() {
-  alert("click");
   interval = setInterval(draw, 10);
 }
