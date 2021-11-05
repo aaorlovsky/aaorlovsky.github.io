@@ -169,7 +169,6 @@ function draw() {
     if (x > paddleX && x < paddleX + paddleWidth) {
       dy = -dy;
     } else {
-      alert("GAME OVER");
       document.location.reload();
       clearInterval(interval);
     }
